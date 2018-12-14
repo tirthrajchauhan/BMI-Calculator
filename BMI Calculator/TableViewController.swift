@@ -36,17 +36,9 @@ class TableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    
-    
-    
-    @IBAction func backbtn(_ sender: Any) {
-        dismiss(animated: true)
-        resignFirstResponder()
-    }
-    
-    
-    
 
+    
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

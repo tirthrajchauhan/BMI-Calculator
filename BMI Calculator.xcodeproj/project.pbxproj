@@ -14,6 +14,7 @@
 		C546A09221C33ADF0094EF0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C546A09121C33ADF0094EF0C /* Assets.xcassets */; };
 		C546A09521C33ADF0094EF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C546A09321C33ADF0094EF0C /* LaunchScreen.storyboard */; };
 		C546A09D21C33CB00094EF0C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546A09C21C33CB00094EF0C /* TableViewController.swift */; };
+		C546A0C021C34A890094EF0C /* bmi.png in Resources */ = {isa = PBXBuildFile; fileRef = C546A0BF21C34A890094EF0C /* bmi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C546A09421C33ADF0094EF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C546A09621C33ADF0094EF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C546A09C21C33CB00094EF0C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C546A0BF21C34A890094EF0C /* bmi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bmi.png; path = ../../../../Desktop/bmi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				C546A08921C33ADD0094EF0C /* ViewController.swift */,
 				C546A08B21C33ADD0094EF0C /* Main.storyboard */,
 				C546A09121C33ADF0094EF0C /* Assets.xcassets */,
+				C546A0BF21C34A890094EF0C /* bmi.png */,
 				C546A09321C33ADF0094EF0C /* LaunchScreen.storyboard */,
 				C546A09621C33ADF0094EF0C /* Info.plist */,
 				C546A08E21C33ADD0094EF0C /* BMI_Calculator.xcdatamodeld */,
@@ -130,6 +133,7 @@
 			files = (
 				C546A09521C33ADF0094EF0C /* LaunchScreen.storyboard in Resources */,
 				C546A09221C33ADF0094EF0C /* Assets.xcassets in Resources */,
+				C546A0C021C34A890094EF0C /* bmi.png in Resources */,
 				C546A08D21C33ADD0094EF0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

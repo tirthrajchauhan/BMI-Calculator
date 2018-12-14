@@ -98,10 +98,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCe-bP-Eay">
-                                <rect key="frame" x="154" y="378" width="82" height="36"/>
+                                <rect key="frame" x="126" y="352" width="82" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="CalculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZrE-v8-NR0"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ra-hU-SLa">
                                 <rect key="frame" x="219" y="316" width="49" height="31"/>
@@ -110,19 +113,8 @@
                                     <action selector="ChangeMetric:" destination="BYZ-38-t0r" eventType="valueChanged" id="PHl-37-fEY"/>
                                 </connections>
                             </switch>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a1S-vP-YYc">
-                                <rect key="frame" x="115" y="498" width="121" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                                <connections>
-                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="zPW-e0-Zc6"/>
-                                </connections>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKG-3c-zpT" userLabel="Result">
-                                <rect key="frame" x="166" y="437" width="42" height="21"/>
+                                <rect key="frame" x="12" y="389" width="351" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -137,6 +129,8 @@
                         <outlet property="Weight" destination="W3t-DI-sjD" id="7Zv-Dk-xmg"/>
                         <outlet property="changemetric" destination="3ra-hU-SLa" id="BSO-Ee-4AH"/>
                         <outlet property="height" destination="jUm-YA-N4V" id="xUS-Gi-BTp"/>
+                        <outlet property="lastname" destination="gtl-wF-VaG" id="fvb-Tl-0MY"/>
+                        <outlet property="name" destination="LgE-pR-ml3" id="Qwr-Mk-Qi8"/>
                     </connections>
                 </viewController>
             </objects>
