@@ -13,16 +13,15 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9o-50-PbR">
-                                <rect key="frame" x="257" y="617" width="106" height="30"/>
+                                <rect key="frame" x="172" y="617" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Previous Result"/>
+                                <state key="normal" title="History"/>
                                 <connections>
                                     <segue destination="gMw-2G-C9t" kind="presentation" id="xIB-yw-lgQ"/>
                                 </connections>
@@ -113,7 +112,7 @@
                                     <action selector="ChangeMetric:" destination="BYZ-38-t0r" eventType="valueChanged" id="PHl-37-fEY"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKG-3c-zpT" userLabel="Result">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKG-3c-zpT" userLabel="Result">
                                 <rect key="frame" x="12" y="389" width="351" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -133,6 +132,7 @@
                         <outlet property="name" destination="LgE-pR-ml3" id="Qwr-Mk-Qi8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="837.60000000000002" y="-116.49175412293854"/>
         </scene>
@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VUJ-tr-LdR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="VUJ-tr-LdR">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VUJ-tr-LdR" id="WU9-vn-Jn5">
@@ -162,10 +162,13 @@
                     <navigationItem key="navigationItem" title="bmi" id="SuO-mj-0vt">
                         <barButtonItem key="leftBarButtonItem" title="back" id="n4J-mm-4kp">
                             <connections>
-                                <action selector="backbtn:" destination="YYt-8z-MLN" id="1UX-yb-qNy"/>
+                                <action selector="backbtn:" destination="YYt-8z-MLN" id="2Pw-u7-7Op"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="WDo-Nf-PpP" id="M7X-eC-UNN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBk-8o-f8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
